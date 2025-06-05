@@ -1,13 +1,12 @@
-
-import FooterDocuvex from '@/components/organism/Footer-docuvex';
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Header from '@/components/organism/Header';
+import FooterDocuvex from "@/components/organism/Footer-docuvex";
+import { Metadata } from "next";
+import Image from "next/image";
+import Header from "@/components/organism/Header";
 
 export const metadata: Metadata = {
-  title: 'Contáctanos | Docuvex - Nxtara',
-  description: 'Canales oficiales de contacto del equipo de soporte de Docuvex',
-  robots: 'index, follow',
+  title: "Contáctanos | Docuvex - Nxtara",
+  description: "Canales oficiales de contacto del equipo de soporte de Docuvex",
+  robots: "index, follow",
 };
 
 export default function ContactanosPage() {
@@ -59,21 +58,23 @@ export default function ContactanosPage() {
               contáctanos. Nuestro equipo te responderá a la brevedad.
             </p>
             <p className="text-base md:text-lg mb-3">
-              📧{' '}
+              📧{" "}
               <a
                 href="mailto:ayudadocuvex@nxtara.com"
                 className="text-teal-700 underline"
               >
-                ayudadocuvex@nxtara.com
+                <b style={{ fontWeight: "bold", color: "#00B39F" }}>
+                  ayudadocuvex@nxtara.com
+                </b>
               </a>
             </p>
             <p className="text-base md:text-lg">
-              📞{' '}
-              <a
-                href="tel:+56934566724"
-                className="text-teal-700 underline"
-              >
-                +56 9 3456 6724
+              📞{" "}
+              <a href="tel:+56934566724" className="text-teal-700 underline">
+                <b style={{ fontWeight: "bold", color: "#00B39F" }}>
+                  {" "}
+                  +56 9 3456 6724{" "}
+                </b>
               </a>
               <br />
               <span className="text-sm text-neutral-700">
