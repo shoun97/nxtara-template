@@ -80,6 +80,9 @@ Footer * {
 }
 
 
+#docs *{
+  overflow: unset !important;
+}
 
 html {
   scroll-behavior: smooth;

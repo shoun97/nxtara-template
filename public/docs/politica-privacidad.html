@@ -22,10 +22,28 @@
         margin-bottom: 16px;
       }
 
-      li * {
+      li {
+        position: relative;
         margin-top: 0;
         padding-left: 20px;
-        list-style-type: disc; 
+        list-style: none; /* desactiva para usar el ::before */
+      }
+      menu, ol, ul {
+        list-style: disc !important;
+      }
+
+      li, ul, ol {
+        overflow-x: disc !important;
+      }
+
+      li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #000;
+        font-size: 20px;
+        line-height: 1;
+        top: 2px;
       }
 
       strong {
@@ -33,7 +51,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="docs">
     <h1>I. INTRODUCCIÓN</h1>
     <p>
       <strong>Nxtara</strong> nombre comercial de
